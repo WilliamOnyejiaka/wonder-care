@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./../assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+header {
+  background-image: linear-gradient(to right, rgba(163, 103, 177, 0.9), rgba(163, 103, 177, 0.7)), url("./../assets/images/view-3d-male-chemist-lab.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+.nav__container .nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav__container .nav__links .nav__link a {
+  padding: 0.5rem;
+  color: #FFD1E3;
+  transition: 0.3s;
+}
+.nav__container .nav__links .nav__link a:hover {
+  color: #ffffff;
+}
+
+.header__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.header__container h1 {
+  margin-bottom: 1rem;
+  max-width: 800px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.header__container p {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: #FFD1E3;
+}
+.header__container button a {
+  color: #ffffff;
+}
+
+.section__container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.service__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.service__header__content p {
+  max-width: 600px;
+  color: #767268;
+}
+
+.service__cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.service__cards .service__card {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.service__cards .service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  color: #A367B1;
+  background-color: #FFD1E3;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.service__cards .service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+.service__cards .service__card p {
+  margin-bottom: 1rem;
+  color: #767268;
+}
+.service__cards .service__card a {
+  color: #A367B1;
+}
+.service__cards .service__card a:hover {
+  color: #5D3587;
+}
+.service__cards .service__card:hover span {
+  color: #FFD1E3;
+  background-color: #A367B1;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__content p {
+  color: #767268;
+  margin-bottom: 1.5rem;
+}
+
+.why__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.why__content p {
+  color: #767268;
+}
+
+.why__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 2rem;
+}
+.why__grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #A367B1;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.why__grid p {
+  color: #767268;
+}
+
+.footer {
+  background-color: #FFD1E3;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__grid .footer__col .logo {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer__grid .footer__col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #A367B1;
+}
+.footer__grid .footer__col p {
+  margin-bottom: 1rem;
+  color: #333333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer__grid .footer__col p i {
+  color: #A367B1;
+}
+.footer__grid .footer__col p:hover {
+  color: #A367B1;
+}
+
+.footer__bar {
+  background-color: #A367B1;
+}
+.footer__bar__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__bar__content p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.footer__bar__content .footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

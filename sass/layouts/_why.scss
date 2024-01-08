@@ -1,0 +1,33 @@
+@use './../base';
+
+.why__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.why__content p {
+    color: base.$text-light;
+}
+
+.why__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 2rem;
+
+    & span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: base.$primary-color;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    & p {
+        color: base.$text-light;
+    }
+}

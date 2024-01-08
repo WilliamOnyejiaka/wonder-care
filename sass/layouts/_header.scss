@@ -1,0 +1,65 @@
+@use './../base';
+
+header {
+    background-image: linear-gradient(to right,
+            rgb(163, 103, 177, 0.9),
+            rgb(163, 103, 177, 0.7)),
+        url('./../assets/images/view-3d-male-chemist-lab.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: base.$max-width;
+    margin: auto;
+    padding: 3rem 1rem;
+
+
+    & .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .nav__link a {
+            padding: 0.5rem;
+            color: base.$primary-color-light;
+            transition: 0.3s;
+
+            &:hover {
+                color: base.$white;
+            }
+        }
+
+    }
+}
+
+.header__container {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+
+    & h1 {
+        margin-bottom: 1rem;
+        max-width: 800px;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    &  p {
+        margin-bottom: 2rem;
+        max-width: 600px;
+        color: base.$primary-color-light;
+    }
+
+    & button a {
+        color: base.$white;
+    }
+}

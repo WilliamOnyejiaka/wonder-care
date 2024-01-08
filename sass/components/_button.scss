@@ -1,0 +1,37 @@
+@use './../base';
+
+.btn {
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: base.$white;
+    border-radius: 5px;
+    background-color: base.$secondary-color;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: base.$btn-hover;
+    }
+}
+
+.service__btn {
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: base.$primary-color;
+    border: 1px solid base.$primary-color;
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service__btn:hover {
+    color: base.$white;
+    background-color: base.$primary-color;
+}
+

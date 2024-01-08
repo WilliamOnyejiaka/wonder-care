@@ -1,0 +1,65 @@
+@use './../base';
+
+.service__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    &__content p {
+        max-width: 600px;
+        color: base.$text-light;
+    }
+}
+
+.service__cards {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .service__card {
+        padding: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        & span {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 10px 20px;
+            font-size: 2.5rem;
+            color: base.$primary-color;
+            background-color: base.$primary-color-light;
+            border-radius: 100%;
+            transition: 0.3s;
+        }
+
+        & h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: base.$text-dark;
+        }
+
+        & p {
+            margin-bottom: 1rem;
+            color: base.$text-light;
+        }
+
+        & a {
+            color: base.$primary-color;
+
+            &:hover {
+                color: base.$primary-color-dark;
+            }
+        }
+
+        &:hover span {
+            color: base.$primary-color-light;
+            background-color: base.$primary-color;
+        }
+
+    }
+}

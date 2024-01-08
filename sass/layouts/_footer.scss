@@ -1,0 +1,69 @@
+@use './../base';
+
+
+.footer {
+    background-color: base.$primary-color-light;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+
+    & .footer__col .logo {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    & .footer__col h4 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: base.$primary-color;
+    }
+
+    & .footer__col p {
+        margin-bottom: 1rem;
+        color: base.$text-dark;
+        cursor: pointer;
+        transition: 0.3s;
+        
+        & i {
+            color: base.$primary-color;
+        }
+
+        &:hover {
+            color: base.$primary-color;
+        }
+    }
+}
+
+.footer__bar {
+    background-color: base.$primary-color;
+
+    &__content {
+        max-width: base.$max-width;
+        margin: auto;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        & p {
+            color: base.$white;
+            font-size: 0.9rem;
+
+        }
+
+        & .footer__socials {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1rem;
+            color: base.$white;
+            cursor: pointer;
+        }
+    }
+}
